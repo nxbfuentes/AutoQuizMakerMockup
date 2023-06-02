@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello! Please enter a text below to turn into a quiz:</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <textarea name="text" rows="10" cols="30"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

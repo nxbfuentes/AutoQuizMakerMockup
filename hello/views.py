@@ -1,4 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def hello_view(request):
-    return HttpResponse("Hello! Enter a text below to turn into a quiz: ")
+    if request.method == 'POST':
+        text = request.POST.get('text')
+        return HttpResponse(f"Creating a quiz based on:\n {text}")
+    else:
+        return render(request, 'hello.html')
