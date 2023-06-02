@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <h2>1. What is the setting of the play Romeo and Juliet?</h2>
+    <input type="radio" id="question1a" name="question1" value="a">
+    <label for="question1a">A) London</label><br>
+    <input type="radio" id="question1b" name="question1" value="b">
+    <label for="question1b">B) Paris</label><br>
+    <input type="radio" id="question1c" name="question1" value="c">
+    <label for="question1c">C) Verona</label><br>
+    <input type="radio" id="question1d" name="question1" value="d">
+    <label for="question1d">D) Florence</label><br>
+
+    <h2>2. Which two families are engaged in a long-standing feud in the play?</h2>
+    <input type="radio" id="question2a" name="question2" value="a">
+    <label for="question2a">A) Montagues and Capulets</label><br>
+    <input type="radio" id="question2b" name="question2" value="b">
+    <label for="question2b">B) Macbeths and Macduffs</label><br>
+    <input type="radio" id="question2c" name="question2" value="c">
+    <label for="question2c">C) Lannisters and Starks</label><br>
+    <input type="radio" id="question2d" name="question2" value="d">
+    <label for="question2d">D) Benvolios and Tybalts</label><br>
+
+    <h2>3. How do Romeo and Juliet's families react to their forbidden love?</h2>
+<input type="radio" id="question3a" name="question3" value="a">
+<label for="question3a">A) They fully support the relationship</label><br>
+<input type="radio" id="question3b" name="question3" value="b">
+<label for="question3b">B) They encourage them to elope</label><br>
+<input type="radio" id="question3c" name="question3" value="c">
+<label for="question3c">C) They remain neutral</label><br>
+<input type="radio" id="question3d" name="question3" value="d">
+<label for="question3d">D) They vehemently oppose the relationship</label><br>
+
+<h2>4. What themes does Romeo and Juliet explore?</h2>
+<input type="radio" id="question4a" name="question4" value="a">
+<label for="question4a">A) Friendship and loyalty</label><br>
+<input type="radio" id="question4b" name="question4" value="b">
+<label for="question4b">B) Betrayal and revenge</label><br>
+<input type="radio" id="question4c" name="question4" value="c">
+<label for="question4c">C) Love and fate</label><br>
+<input type="radio" id="question4d" name="question4" value="d">
+<label for="question4d">D) Greed and power</label><br>
+
+<h2>5. What is the ultimate fate of Romeo and Juliet?</h2>
+<input type="radio" id="question5a" name="question5" value="a">
+<label for="question5a">A) They get married and live happily ever after</label><br>
+<input type="radio" id="question5b" name="question5" value="b">
+<label for="question5b">B) They are exiled from Verona</label><br>
+<input type="radio" id="question5c" name="question5" value="c">
+<label for="question5c">C) They commit suicide</label><br>
+<input type="radio" id="question5d" name="question5" value="d">
+<label for="question5d">D) They are reconciled with their families</label><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
